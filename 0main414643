@@ -1014,6 +1014,7 @@ Stop.MouseButton1Down:connect(function()
 	Stop.Visible = false
 	Execute.Visible = true
 	StartBlocks.Visible = true
+	confirmation.Visible = false
 
 	game:GetService('Players').LocalPlayer.Character.Humanoid.Health = 0
 	game:GetService('Players').LocalPlayer.Character.Humanoid.Sit = true
