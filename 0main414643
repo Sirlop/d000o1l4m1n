@@ -290,8 +290,8 @@ end
 --Starters
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "For Protection.";
-	Text = "You Migh Lag In Ping.";
+	Title = "Script Version:";
+	Text = "\\ 1.0 //";
 	Duration = 15;
 })
 
