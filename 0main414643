@@ -405,7 +405,6 @@ polkaman.MouseButton1Down:Connect(function()
 	if table.find(whitelist, game.Players.LocalPlayer.Character.Name) then
 		print("Whitelisted.")
 		FadeOut()
-		game.Workspace.proMONEYLMAOOObaby:Destroy()
 		v0lmann21mai14m3lad0mmm.Visible = false
 		bigchangeshaha.Visible = true
 		ayooo.Active = false
