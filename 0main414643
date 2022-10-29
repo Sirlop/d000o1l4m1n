@@ -855,7 +855,7 @@ confirmation.Position = UDim2.new(0.0325581394, 0, 0.809523821, 0)
 confirmation.Size = UDim2.new(0, 200, 0, 50)
 confirmation.Visible = false
 confirmation.Font = Enum.Font.SourceSansBold
-confirmation.Text = "Press Again"
+confirmation.Text = "Confirm?"
 confirmation.TextColor3 = Color3.fromRGB(0, 170, 0)
 confirmation.TextSize = 32.000
 confirmation.MouseButton1Down:Connect(function()
@@ -1710,14 +1710,26 @@ local function RLDVV_fake_script() -- Frame.LocalScript
 end
 coroutine.wrap(RLDVV_fake_script)()
 
+local function RLDVJ_fake_script() -- Frame.LocalScript 
+	while true do
+		if DRAMAA.Active == true then
+			settings():GetService('NetworkSettings').IncomingReplicationLag = 0
+			wait(0.1)
+		end
+		wait(0.1)
+	end
+	wait(0.1)
+end
+coroutine.wrap(RLDVJ_fake_script)()
+
 while ayooo.Active do
 	if Frame.Visible == true or bigchangeshaha.Visible == true or v0lmann21mai14m3lad0mmm.Visible == false then
-			Crash()
-			Crash()
-			Crash()
-			Crash2()
-			Crash2()
-			Crash2()
-		end
+		Crash()
+		Crash()
+		Crash()
+		Crash2()
+		Crash2()
+		Crash2()
+	end
 	wait(0.1)
 end
