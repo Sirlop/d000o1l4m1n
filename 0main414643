@@ -290,8 +290,9 @@ end
 --Starters
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "Script Version:";
-	Text = "\\ 1.0 //";
+	Title = "Version 1.0";
+	Text = " ";
+	Button1 = "OK";
 	Duration = 15;
 })
 
