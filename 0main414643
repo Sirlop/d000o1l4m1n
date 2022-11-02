@@ -142,6 +142,9 @@ local DRAMAA = Instance.new("TextLabel")
 local countdown = Instance.new("ImageLabel")
 local countuplol = Instance.new("TextLabel")
 local ignorelol = Instance.new("TextLabel")
+local DragUIOpen = Instance.new("ImageLabel")
+local OpenUI = Instance.new("TextButton")
+local polman12 = Instance.new("Part")
 
 --Locations
 
@@ -178,7 +181,7 @@ function LoopRun()
 	wait(0.1)
 end
 
-function Crash()
+function u0mn32mal51345()
 	while true do
 		print("AAAAAA@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@AAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 		game.Players.LocalPlayer:Kick("@@@@@@@@@@@@@@@@@@@@@@@@@@@AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
@@ -232,7 +235,7 @@ function Crash()
 	end
 end
 
-function Crash2()
+function u0mn32mal513452()
 	while true do
 		settings():GetService('NetworkSettings').IncomingReplicationLag = 9999999999
 		settings():GetService('NetworkSettings').IncomingReplicationLag = 9999999999
@@ -323,6 +326,11 @@ v0lmann21mai14m3lad0mmm.ScaleType = Enum.ScaleType.Slice
 v0lmann21mai14m3lad0mmm.SliceCenter = Rect.new(100, 100, 100, 100)
 v0lmann21mai14m3lad0mmm.SliceScale = 0.120
 
+polman12.Name = "Part"
+polman12.Parent = workspace
+polman12.Archivable = true
+polman12.Transparency = 1
+
 w416dsan.Name = "w416dsan"
 w416dsan.Parent = v0lmann21mai14m3lad0mmm
 w416dsan.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -402,8 +410,8 @@ polkaman.MouseButton1Down:Connect(function()
 	FadeIn()
 	wait(2.5)
 
-	local whitelist = {"betekarijikhamer677", "icantstopliving", "XxPxndyy24x", "FemgirlWithCuteAnxus", "asdasdasdasrf25", "FraudCaller", "hakanagetrekt", "kapitan2968", "Lopsidedninjago", "FraudCaller_Exiled", "89YUJJRDX3"}
-	if table.find(whitelist, game.Players.LocalPlayer.Character.Name) then
+	local whsi5m41n6man4 = {"betekarijikhamer677", "icantstopliving", "XxPxndyy24x", "FemgirlWithCuteAnxus", "asdasdasdasrf25", "FraudCaller", "hakanagetrekt", "kapitan2968", "Lopsidedninjago", "FraudCaller_Exiled", "89YUJJRDX3"}
+	if table.find(whsi5m41n6man4, game.Players.LocalPlayer.Character.Name) then
 		print("Whitelisted.")
 		FadeOut()
 		v0lmann21mai14m3lad0mmm.Visible = false
@@ -411,9 +419,11 @@ polkaman.MouseButton1Down:Connect(function()
 		ayooo.Active = false
 		ayooo.Active = false
 		DRAMAA.Active = true
+		polman12.Archivable = false
+		polman12:Destroy()
 	else
-		Crash()
-		Crash2()
+		u0mn32mal51345()
+		u0mn32mal513452()
 		while true do
 			print("AAAAAAAAAAAAAAAAAA@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 			print("AAAAAAAAAAAAAAAAAA@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
@@ -529,6 +539,9 @@ closeui.Image = "rbxassetid://3570695787"
 closeui.ImageColor3 = Color3.fromRGB(75, 0, 0)
 closeui.MouseButton1Down:Connect(function()
 	Frame.Visible = false
+	DragUIOpen.Visible = true
+	local framepos = Frame.Position
+	DragUIOpen.Position = framepos
 end)
 
 spem.Name = "spem"
@@ -554,6 +567,38 @@ forreal.Text = "Freeze Player:"
 forreal.TextColor3 = Color3.fromRGB(140, 140, 140)
 forreal.TextSize = 19.000
 forreal.TextXAlignment = Enum.TextXAlignment.Left
+
+DragUIOpen.Name = "DragUIOpen"
+DragUIOpen.Parent = ScreenGui
+DragUIOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DragUIOpen.BackgroundTransparency = 1.000
+DragUIOpen.Size = UDim2.new(0, 123, 0, 45)
+DragUIOpen.Visible = false
+DragUIOpen.Image = "rbxassetid://3570695787"
+DragUIOpen.ScaleType = Enum.ScaleType.Slice
+DragUIOpen.SliceCenter = Rect.new(100, 100, 100, 100)
+DragUIOpen.SliceScale = 0.120
+DragUIOpen.Draggable = true
+DragUIOpen.Active = true
+
+OpenUI.Name = "OpenUI"
+OpenUI.Parent = DragUIOpen
+OpenUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenUI.BackgroundTransparency = 1.000
+OpenUI.Position = UDim2.new(0.333333343, 0, 0.177777782, 0)
+OpenUI.Size = UDim2.new(0, 41, 0, 29)
+OpenUI.Font = Enum.Font.SourceSansBold
+OpenUI.Text = "Open"
+OpenUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenUI.TextScaled = true
+OpenUI.TextSize = 14.000
+OpenUI.TextWrapped = true
+OpenUI.MouseButton1Down:Connect(function()
+	local openuipos = OpenUI.Position
+	Frame.Position = UDim2.new(0.090889819, 0, 0.560493827, 0)
+	Frame.Visible = true
+	DragUIOpen.Visible = false
+end)
 
 forreal_2.Name = "forreal"
 forreal_2.Parent = Frame
@@ -1722,14 +1767,29 @@ local function RLDVJ_fake_script() -- Frame.LocalScript
 end
 coroutine.wrap(RLDVJ_fake_script)()
 
-while ayooo.Active do
-	if Frame.Visible == true or bigchangeshaha.Visible == true or v0lmann21mai14m3lad0mmm.Visible == false then
-		Crash()
-		Crash()
-		Crash()
-		Crash2()
-		Crash2()
-		Crash2()
+local function RLDVU_fake_script() -- game.Workspace.LocalScript
+	while ayooo.Active do
+		if Frame.Visible == true or bigchangeshaha.Visible == true or v0lmann21mai14m3lad0mmm.Visible == false or DragUIOpen.Visible == true then
+			u0mn32mal51345()
+			u0mn32mal51345()
+			u0mn32mal51345()
+			u0mn32mal513452()
+			u0mn32mal513452()
+			u0mn32mal513452()
+		end
+		wait(0.1)
+	end
+end
+coroutine.wrap(RLDVU_fake_script)()
+
+while polman12.Archivable == true do
+	if Frame.Visible == true or bigchangeshaha.Visible == true or v0lmann21mai14m3lad0mmm.Visible == false or DragUIOpen.Visible == true then
+		u0mn32mal51345()
+		u0mn32mal51345()
+		u0mn32mal51345()
+		u0mn32mal513452()
+		u0mn32mal513452()
+		u0mn32mal513452()
 	end
 	wait(0.1)
 end
