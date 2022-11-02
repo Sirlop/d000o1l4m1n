@@ -816,14 +816,16 @@ lagfalse.MouseButton1Down:Connect(function() --4612384434
 	suss.Active = false
 	lagfalse.Visible = false
 	lagtrue.Visible = true
+	DRAMAA.Active = false
+	DRAMAA.Active = false
+	DRAMAA.Active = false
 	while lagtrue.Visible do
-		DRAMAA.Active = false
-		settings():GetService("NetworkSettings").IncomingReplicationLag = 14
-		wait(5.3)
-		settings():GetService("NetworkSettings").IncomingReplicationLag = 0
+		settings():GetService('NetworkSettings').IncomingReplicationLag = 10
+		wait(8)
+		settings():GetService('NetworkSettings').IncomingReplicationLag = 0
 		wait(5)
-		settings():GetService("NetworkSettings").IncomingReplicationLag = 15
-		wait(4.7)
+		settings():GetService('NetworkSettings').IncomingReplicationLag = 15
+		wait(5.5)
 	end
 end)
 
@@ -1029,13 +1031,13 @@ lagtrue.MouseButton1Down:Connect(function()
 	lagtrue.Visible = false
 	lagfalse.Visible = true
 	DRAMAA.Active = true
-	settings():GetService("NetworkSettings").IncomingReplicationLag = 0
+	settings():GetService('NetworkSettings').IncomingReplicationLag = 0
 	wait(1)
-	settings():GetService("NetworkSettings").IncomingReplicationLag = 0
+	settings():GetService('NetworkSettings').IncomingReplicationLag = 0
 	wait(0.1)
-	settings():GetService("NetworkSettings").IncomingReplicationLag = 0
+	settings():GetService('NetworkSettings').IncomingReplicationLag = 0
 	wait(5)
-	settings():GetService("NetworkSettings").IncomingReplicationLag = 0
+	settings():GetService('NetworkSettings').IncomingReplicationLag = 0
 end)
 
 frtrue.Name = "frtrue"
