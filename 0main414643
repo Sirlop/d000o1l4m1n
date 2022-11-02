@@ -821,11 +821,11 @@ lagfalse.MouseButton1Down:Connect(function() --4612384434
 	DRAMAA.Active = false
 	while lagtrue.Visible do
 		settings():GetService('NetworkSettings').IncomingReplicationLag = 10
-		wait(8)
+		wait(5.6)
 		settings():GetService('NetworkSettings').IncomingReplicationLag = 0
 		wait(5)
 		settings():GetService('NetworkSettings').IncomingReplicationLag = 15
-		wait(5.5)
+		wait(4.8)
 	end
 end)
 
