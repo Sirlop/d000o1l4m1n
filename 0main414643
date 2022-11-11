@@ -578,7 +578,7 @@ Changelog.Size = UDim2.new(0, 77, 0, 41)
 Changelog.ZIndex = 3
 Changelog.Font = Enum.Font.SourceSansBold
 Changelog.Text = "•    Changelog"
-Changelog.TextColor3 = Color3.fromRGB(181, 181, 181)
+Changelog.TextColor3 = Color3.fromRGB(106, 106, 106)
 Changelog.TextSize = 14.000
 Changelog.TextXAlignment = Enum.TextXAlignment.Left
 Changelog.MouseButton1Down:Connect(function()
@@ -1972,7 +1972,7 @@ ChangelogImage.BackgroundTransparency = 1.000
 ChangelogImage.BorderColor3 = Color3.fromRGB(27, 42, 53)
 ChangelogImage.Position = UDim2.new(-0.390833735, 0, -0.172161177, 0)
 ChangelogImage.Size = UDim2.new(0, 885, 0, 423)
-ChangelogImage.Visible = false
+ChangelogImage.Visible = true
 ChangelogImage.ZIndex = 3
 ChangelogImage.Image = "http://www.roblox.com/asset/?id=11530501056"
 ChangelogImage.ImageTransparency = 0.800
