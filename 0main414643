@@ -82,6 +82,7 @@
 --Instances
 
 
+
 local ScreenGui = Instance.new("ScreenGui")
 local ImageLabel = Instance.new("ImageLabel")
 local girl = Instance.new("ImageLabel")
@@ -97,16 +98,10 @@ local SettingsMenu = Instance.new("TextButton")
 local Miscellaneous = Instance.new("TextButton")
 local ChangelogScroll = Instance.new("ScrollingFrame")
 local ayooo = Instance.new("TextLabel")
-local DRAMAA = Instance.new("TextLabel")
+local suss = Instance.new("TextLabel")
 local hellothere = Instance.new("TextLabel")
 local hellothere_2 = Instance.new("TextLabel")
 local suss_2 = Instance.new("TextLabel")
-local hellothere_3 = Instance.new("TextLabel")
-local suss_3 = Instance.new("TextLabel")
-local suss_4 = Instance.new("TextLabel")
-local hellothere_4 = Instance.new("TextLabel")
-local suss_5 = Instance.new("TextLabel")
-local hellothere_5 = Instance.new("TextLabel")
 local shadow = Instance.new("ImageLabel")
 local HomeScroll = Instance.new("ScrollingFrame")
 local yes = Instance.new("TextLabel")
@@ -114,12 +109,12 @@ local Execute = Instance.new("TextButton")
 local Stop = Instance.new("TextButton")
 local timeel = Instance.new("TextLabel")
 local yes_2 = Instance.new("TextLabel")
-local ignorelol = Instance.new("TextLabel")
+local yes_3 = Instance.new("TextLabel")
 local StartBlocks = Instance.new("TextButton")
 local confirmation = Instance.new("TextButton")
 local BlockCount = Instance.new("TextLabel")
 local yes_4 = Instance.new("TextLabel")
-local yes_5 = Instance.new("TextLabel")
+local ignorelol = Instance.new("TextLabel")
 local pingcount = Instance.new("TextLabel")
 local MiscScroll = Instance.new("ScrollingFrame")
 local yes_6 = Instance.new("TextLabel")
@@ -136,25 +131,28 @@ local godf = Instance.new("TextButton")
 local yes_10 = Instance.new("TextLabel")
 local lagfalse = Instance.new("TextButton")
 local lagtrue = Instance.new("TextButton")
-local suss = Instance.new("TextLabel")
+local yes_11 = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
-local PlaceTeleporterScroll = Instance.new("ScrollingFrame")
 local yes_12 = Instance.new("TextLabel")
+local toolfalse = Instance.new("TextButton")
+local tooltrue = Instance.new("TextButton")
+local PlaceTeleporterScroll = Instance.new("ScrollingFrame")
+local yes_13 = Instance.new("TextLabel")
 local lifeinparatp = Instance.new("TextButton")
 local SettingsScroll = Instance.new("ScrollingFrame")
-local TextLabel = Instance.new("TextLabel")
+local suss_3 = Instance.new("TextLabel")
 local quitUI = Instance.new("TextButton")
-local TextLabel_2 = Instance.new("TextLabel")
+local DRAMAA = Instance.new("TextLabel")
 local shadowtrue = Instance.new("TextButton")
 local shadowfalse = Instance.new("TextButton")
-local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
 local versold = Instance.new("TextButton")
-local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
 local NAME2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
-local TextLabel_7 = Instance.new("TextLabel")
-local TextLabel_8 = Instance.new("TextLabel")
 local SettingsImage = Instance.new("ImageLabel")
 local whaturon = Instance.new("TextLabel")
 local PortalImage = Instance.new("ImageLabel")
@@ -163,7 +161,7 @@ local HomeImage = Instance.new("ImageLabel")
 local ChangelogImage = Instance.new("ImageLabel")
 local DragUIOpen = Instance.new("ImageLabel")
 local OpenUI = Instance.new("TextButton")
-local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
 local v0lmann21mai14m3lad0mmm = Instance.new("ImageLabel")
 local w416dsan = Instance.new("TextLabel")
 local l109lam2 = Instance.new("TextLabel")
@@ -184,7 +182,7 @@ ScreenGui.Parent = game.CoreGui
 
 --Functions
 
-function Notification(title, text, time2)
+function SendNotification(title, text, time2)
 	game.StarterGui:SetCore("SendNotification", {
 		Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
 		Title = title;
@@ -409,13 +407,13 @@ PlayerPlayer = game.Players.LocalPlayer
 
 game.StarterGui:SetCore("SendNotification", {
 	Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
-	Title = "Version 1.1";
+	Title = "Version 1.2";
 	Text = " ";
 	Button1 = "OK";
 	Duration = 15;
 })
 
-ver = "v1.1"
+ver = "v1.2"
 
 print("Instances Loaded.")
 print("Functions Loaded.")
@@ -426,6 +424,10 @@ ayooo.Active = true
 local Sparkles = Instance.new("Sparkles")
 Sparkles.Parent = game:GetService('Players').LocalPlayer.Character.Head
 
+polman12.Name = "Part"
+polman12.Parent = workspace
+polman12.Archivable = true
+polman12.Transparency = 1
 
 
 ImageLabel.Parent = ScreenGui
@@ -435,27 +437,21 @@ ImageLabel.Position = UDim2.new(0.207122102, 0, 0.953086436, 0)
 ImageLabel.Size = UDim2.new(0, 38, 0, 38)
 ImageLabel.Image = "http://www.roblox.com/asset/?id=5218079355"
 
-polman12.Name = "Part"
-polman12.Parent = workspace
-polman12.Archivable = true
-polman12.Transparency = 1
-
 girl.Name = "girl"
 girl.Parent = ScreenGui
+girl.AnchorPoint = Vector2.new(0.5, 0.5)
 girl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 girl.BackgroundTransparency = 1.000
-girl.Position = UDim2.new(0.124127947, 0, -0.0854320228, 0)
+girl.Position = UDim2.new(0.5, 0, 0.5, 0)
 girl.Size = UDim2.new(0, 1034, 0, 1034)
 girl.Visible = false
 girl.Image = "http://www.roblox.com/asset/?id=5523078868"
-v0lmann21mai14m3lad0mmm.AnchorPoint = Vector2.new(0.5, 0.5)
-v0lmann21mai14m3lad0mmm.Position = UDim2.new(0.5, 0, 0.5, 0)
 
 NewFrame.Name = "NewFrame"
 NewFrame.Parent = ScreenGui
 NewFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 NewFrame.BackgroundTransparency = 1.000
-NewFrame.Position = UDim2.new(0.17151162, 0, 0.539506137, 0)
+NewFrame.Position = UDim2.new(0.172965109, 0, 0.533333302, 0)
 NewFrame.Size = UDim2.new(0, 462, 0, 273)
 NewFrame.Visible = false
 NewFrame.ZIndex = 3
@@ -518,7 +514,6 @@ gui.InputChanged:Connect(function(input)
 end)
 
 runService.Heartbeat:Connect(Update)
-
 
 de.Name = "de"
 de.Parent = NewFrame
@@ -601,7 +596,6 @@ Changelog.MouseButton1Down:Connect(function()
 	Miscellaneous.TextColor3 = Color3.fromRGB(255, 255, 255)
 	Changelog.TextColor3 = Color3.fromRGB(106, 106, 106)
 end)
-
 
 Home.Name = "Home"
 Home.Parent = NewFrame
@@ -754,21 +748,21 @@ ayooo.Position = UDim2.new(0.295686394, 0, 0.00535714393, 0)
 ayooo.Size = UDim2.new(0, 121, 0, 39)
 ayooo.ZIndex = 3
 ayooo.Font = Enum.Font.SourceSansBold
-ayooo.Text = "Version 1.1"
+ayooo.Text = "Version 1.2"
 ayooo.TextColor3 = Color3.fromRGB(118, 118, 118)
 ayooo.TextSize = 18.000
 
-DRAMAA.Name = "suss"
-DRAMAA.Parent = ChangelogScroll
-DRAMAA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DRAMAA.BackgroundTransparency = 1.000
-DRAMAA.Position = UDim2.new(0.0613789819, 0, 0.135959119, 0)
-DRAMAA.Size = UDim2.new(0, 47, 0, 44)
-DRAMAA.ZIndex = 3
-DRAMAA.Font = Enum.Font.SourceSansBold
-DRAMAA.Text = "+"
-DRAMAA.TextColor3 = Color3.fromRGB(0, 170, 0)
-DRAMAA.TextSize = 20.000
+suss.Name = "suss"
+suss.Parent = ChangelogScroll
+suss.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+suss.BackgroundTransparency = 1.000
+suss.Position = UDim2.new(0.0613789819, 0, 0.135959119, 0)
+suss.Size = UDim2.new(0, 47, 0, 44)
+suss.ZIndex = 3
+suss.Font = Enum.Font.SourceSansBold
+suss.Text = "+"
+suss.TextColor3 = Color3.fromRGB(0, 170, 0)
+suss.TextSize = 20.000
 
 hellothere.Name = "hellothere"
 hellothere.Parent = ChangelogScroll
@@ -792,7 +786,7 @@ hellothere_2.Position = UDim2.new(0.215820104, 0, 0.282631874, 0)
 hellothere_2.Size = UDim2.new(0, 195, 0, 38)
 hellothere_2.ZIndex = 3
 hellothere_2.Font = Enum.Font.SourceSansBold
-hellothere_2.Text = "Miscellaneous Menu."
+hellothere_2.Text = "Anti ToolKill Module."
 hellothere_2.TextColor3 = Color3.fromRGB(189, 189, 189)
 hellothere_2.TextSize = 16.000
 hellothere_2.TextWrapped = true
@@ -809,84 +803,6 @@ suss_2.Font = Enum.Font.SourceSansBold
 suss_2.Text = "+"
 suss_2.TextColor3 = Color3.fromRGB(0, 170, 0)
 suss_2.TextSize = 20.000
-
-hellothere_3.Name = "hellothere"
-hellothere_3.Parent = ChangelogScroll
-hellothere_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hellothere_3.BackgroundTransparency = 1.000
-hellothere_3.Position = UDim2.new(0.21412912, 0, 0.41868633, 0)
-hellothere_3.Size = UDim2.new(0, 195, 0, 38)
-hellothere_3.ZIndex = 3
-hellothere_3.Font = Enum.Font.SourceSansBold
-hellothere_3.Text = "Dragging The UI Is Smooth."
-hellothere_3.TextColor3 = Color3.fromRGB(189, 189, 189)
-hellothere_3.TextSize = 16.000
-hellothere_3.TextWrapped = true
-hellothere_3.TextXAlignment = Enum.TextXAlignment.Left
-
-suss_3.Name = "suss"
-suss_3.Parent = ChangelogScroll
-suss_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-suss_3.BackgroundTransparency = 1.000
-suss_3.Position = UDim2.new(0.0584413409, 0, 0.41146934, 0)
-suss_3.Size = UDim2.new(0, 47, 0, 44)
-suss_3.ZIndex = 3
-suss_3.Font = Enum.Font.SourceSansBold
-suss_3.Text = "+"
-suss_3.TextColor3 = Color3.fromRGB(0, 170, 0)
-suss_3.TextSize = 20.000
-
-suss_4.Name = "suss"
-suss_4.Parent = ChangelogScroll
-suss_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-suss_4.BackgroundTransparency = 1.000
-suss_4.Position = UDim2.new(0.0584413409, 0, 0.561129212, 0)
-suss_4.Size = UDim2.new(0, 47, 0, 44)
-suss_4.ZIndex = 3
-suss_4.Font = Enum.Font.SourceSansBold
-suss_4.Text = "~"
-suss_4.TextColor3 = Color3.fromRGB(255, 255, 0)
-suss_4.TextSize = 20.000
-
-hellothere_4.Name = "hellothere"
-hellothere_4.Parent = ChangelogScroll
-hellothere_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hellothere_4.BackgroundTransparency = 1.000
-hellothere_4.Position = UDim2.new(0.217451379, 0, 0.568346202, 0)
-hellothere_4.Size = UDim2.new(0, 195, 0, 38)
-hellothere_4.ZIndex = 3
-hellothere_4.Font = Enum.Font.SourceSansBold
-hellothere_4.Text = "Recoded Extra Lag."
-hellothere_4.TextColor3 = Color3.fromRGB(189, 189, 189)
-hellothere_4.TextSize = 16.000
-hellothere_4.TextWrapped = true
-hellothere_4.TextXAlignment = Enum.TextXAlignment.Left
-
-suss_5.Name = "suss"
-suss_5.Parent = ChangelogScroll
-suss_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-suss_5.BackgroundTransparency = 1.000
-suss_5.Position = UDim2.new(0.0584413409, 0, 0.697183609, 0)
-suss_5.Size = UDim2.new(0, 47, 0, 44)
-suss_5.ZIndex = 3
-suss_5.Font = Enum.Font.SourceSansBold
-suss_5.Text = "~"
-suss_5.TextColor3 = Color3.fromRGB(255, 255, 0)
-suss_5.TextSize = 20.000
-
-hellothere_5.Name = "hellothere"
-hellothere_5.Parent = ChangelogScroll
-hellothere_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-hellothere_5.BackgroundTransparency = 1.000
-hellothere_5.Position = UDim2.new(0.21412918, 0, 0.708988369, 0)
-hellothere_5.Size = UDim2.new(0, 195, 0, 70)
-hellothere_5.ZIndex = 3
-hellothere_5.Font = Enum.Font.SourceSansBold
-hellothere_5.Text = "Can Still Switch Back To Old UI (New Features Are Not Included.)"
-hellothere_5.TextColor3 = Color3.fromRGB(189, 189, 189)
-hellothere_5.TextSize = 16.000
-hellothere_5.TextWrapped = true
-hellothere_5.TextXAlignment = Enum.TextXAlignment.Left
 
 shadow.Name = "shadow"
 shadow.Parent = NewFrame
@@ -1058,6 +974,10 @@ Stop.Text = "Stop"
 Stop.TextColor3 = Color3.fromRGB(170, 0, 0)
 Stop.TextSize = 32.000
 Stop.MouseButton1Down:connect(function()
+	Stop.Visible = false
+	Execute.Visible = true
+	StartBlocks.Visible = true
+	confirmation.Visible = false
 	local Sound = Instance.new("Sound")
 	Sound.SoundId = "rbxassetid://4612384434"
 	Sound.Looped = false
@@ -1080,11 +1000,6 @@ Stop.MouseButton1Down:connect(function()
 		Text = "Attempting To Stop.";
 		Duration = 10;
 	})
-
-	Stop.Visible = false
-	Execute.Visible = true
-	StartBlocks.Visible = true
-	confirmation.Visible = false
 
 	game:GetService('Players').LocalPlayer.Character.Humanoid.Health = 0
 	game:GetService('Players').LocalPlayer.Character.Humanoid.Sit = true
@@ -1116,17 +1031,17 @@ yes_2.Text = "Time Elapsed With Script:"
 yes_2.TextColor3 = Color3.fromRGB(176, 176, 176)
 yes_2.TextSize = 19.000
 
-ignorelol.Name = "yes"
-ignorelol.Parent = HomeScroll
-ignorelol.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ignorelol.BackgroundTransparency = 1.000
-ignorelol.Position = UDim2.new(0.165448502, 0, 0.197420627, 0)
-ignorelol.Size = UDim2.new(0, 200, 0, 50)
-ignorelol.ZIndex = 3
-ignorelol.Font = Enum.Font.SourceSansBold
-ignorelol.Text = "Spammer #2"
-ignorelol.TextColor3 = Color3.fromRGB(255, 255, 255)
-ignorelol.TextSize = 19.000
+yes_3.Name = "yes"
+yes_3.Parent = HomeScroll
+yes_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yes_3.BackgroundTransparency = 1.000
+yes_3.Position = UDim2.new(0.165448502, 0, 0.197420627, 0)
+yes_3.Size = UDim2.new(0, 200, 0, 50)
+yes_3.ZIndex = 3
+yes_3.Font = Enum.Font.SourceSansBold
+yes_3.Text = "Spammer #2"
+yes_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+yes_3.TextSize = 19.000
 
 StartBlocks.Name = "StartBlocks"
 StartBlocks.Parent = HomeScroll
@@ -1171,7 +1086,6 @@ StartBlocks.MouseButton1Down:Connect(function()
 
 
 end)
-
 
 confirmation.Name = "confirmation"
 confirmation.Parent = HomeScroll
@@ -1252,18 +1166,18 @@ yes_4.Text = "Total Blocks Spammed:"
 yes_4.TextColor3 = Color3.fromRGB(176, 176, 176)
 yes_4.TextSize = 19.000
 
-yes_5.Name = "yes"
-yes_5.Parent = HomeScroll
-yes_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-yes_5.BackgroundTransparency = 1.000
-yes_5.Position = UDim2.new(0.0790697262, 0, 0.33959353, 0)
-yes_5.Size = UDim2.new(0, 172, 0, 50)
-yes_5.ZIndex = 3
-yes_5.Font = Enum.Font.SourceSansBold
-yes_5.Text = "Advanced FPS Counter:"
-yes_5.TextColor3 = Color3.fromRGB(176, 176, 176)
-yes_5.TextSize = 19.000
-yes_5.TextXAlignment = Enum.TextXAlignment.Left
+ignorelol.Name = "yes"
+ignorelol.Parent = HomeScroll
+ignorelol.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ignorelol.BackgroundTransparency = 1.000
+ignorelol.Position = UDim2.new(0.0790697262, 0, 0.33959353, 0)
+ignorelol.Size = UDim2.new(0, 172, 0, 50)
+ignorelol.ZIndex = 3
+ignorelol.Font = Enum.Font.SourceSansBold
+ignorelol.Text = "Advanced FPS Counter:"
+ignorelol.TextColor3 = Color3.fromRGB(176, 176, 176)
+ignorelol.TextSize = 19.000
+ignorelol.TextXAlignment = Enum.TextXAlignment.Left
 
 pingcount.Name = "pingcount"
 pingcount.Parent = HomeScroll
@@ -1288,14 +1202,14 @@ MiscScroll.Position = UDim2.new(0.315369308, 0, 0.20424509, 0)
 MiscScroll.Size = UDim2.new(0, 298, 0, 202)
 MiscScroll.Visible = false
 MiscScroll.ZIndex = 99
-MiscScroll.CanvasSize = UDim2.new(0, 0, 1, 5)
+MiscScroll.CanvasSize = UDim2.new(0, 0, 2, 5)
 MiscScroll.ScrollBarThickness = 8
 
 yes_6.Name = "yes"
 yes_6.Parent = MiscScroll
 yes_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 yes_6.BackgroundTransparency = 1.000
-yes_6.Position = UDim2.new(0.032558132, 0, 0.0488945544, 0)
+yes_6.Position = UDim2.new(0.032558132, 0, 0.0234862063, 0)
 yes_6.Size = UDim2.new(0, 200, 0, 50)
 yes_6.ZIndex = 3
 yes_6.Font = Enum.Font.SourceSansBold
@@ -1308,7 +1222,7 @@ Strollerfalse.Name = "Strollerfalse"
 Strollerfalse.Parent = MiscScroll
 Strollerfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Strollerfalse.BackgroundTransparency = 1.000
-Strollerfalse.Position = UDim2.new(0.344219506, 0, 0.0801159069, 0)
+Strollerfalse.Position = UDim2.new(0.377776563, 0, 0.0401885025, 0)
 Strollerfalse.Size = UDim2.new(0, 57, 0, 34)
 Strollerfalse.ZIndex = 3
 Strollerfalse.Font = Enum.Font.SourceSansBold
@@ -1323,9 +1237,11 @@ Strollerfalse.MouseButton1Down:Connect(function()
 		if game:GetService('Players').LocalPlayer.Character.Humanoid.Sit == true then
 			game:GetService('Players').LocalPlayer.Character.Humanoid.Sit = false
 			game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = true
-			wait(0.5)
+			game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
+			wait(1)
 			game:GetService('Players').LocalPlayer.Character.Humanoid.Jump = true
 			game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = false
+			game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
 		end
 		wait(0.1)
 	end
@@ -1335,7 +1251,7 @@ strollertrue.Name = "strollertrue"
 strollertrue.Parent = MiscScroll
 strollertrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 strollertrue.BackgroundTransparency = 1.000
-strollertrue.Position = UDim2.new(0.344219446, 0, 0.0801159367, 0)
+strollertrue.Position = UDim2.new(0.377776504, 0, 0.0401885323, 0)
 strollertrue.Size = UDim2.new(0, 57, 0, 34)
 strollertrue.Visible = false
 strollertrue.ZIndex = 3
@@ -1352,7 +1268,7 @@ yes_7.Name = "yes"
 yes_7.Parent = MiscScroll
 yes_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 yes_7.BackgroundTransparency = 1.000
-yes_7.Position = UDim2.new(0.032558132, 0, 0.202740714, 0)
+yes_7.Position = UDim2.new(0.032558132, 0, 0.111996621, 0)
 yes_7.Size = UDim2.new(0, 200, 0, 50)
 yes_7.ZIndex = 3
 yes_7.Font = Enum.Font.SourceSansBold
@@ -1365,8 +1281,8 @@ frtrue.Name = "frtrue"
 frtrue.Parent = MiscScroll
 frtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 frtrue.BackgroundTransparency = 1.000
-frtrue.Position = UDim2.new(0.40343976, 0, 0.238562047, 0)
-frtrue.Size = UDim2.new(0, 57, 0, 34)
+frtrue.Position = UDim2.new(0.410694003, 0, 0.12733534, 0)
+frtrue.Size = UDim2.new(0, 58, 0, 35)
 frtrue.Visible = false
 frtrue.ZIndex = 3
 frtrue.Font = Enum.Font.SourceSansBold
@@ -1381,15 +1297,20 @@ frtrue.MouseButton1Down:Connect(function()
 	frtrue.Visible = false
 	frfalse.Visible = true
 	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = false
+	game:GetService('Players').LocalPlayer.Character.Head.Anchored = false
+	game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
+	game:GetService('Players').LocalPlayer.Character["Left Arm"].Anchored = false
+	game:GetService('Players').LocalPlayer.Character["Right Arm"].Anchored = false
+	game:GetService('Players').LocalPlayer.Character["Left Leg"].Anchored = false
+	game:GetService('Players').LocalPlayer.Character["Right Leg"].Anchored = false
 end)
-
 
 frfalse.Name = "frfalse"
 frfalse.Parent = MiscScroll
 frfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 frfalse.BackgroundTransparency = 1.000
-frfalse.Position = UDim2.new(0.40343976, 0, 0.238562047, 0)
-frfalse.Size = UDim2.new(0, 57, 0, 34)
+frfalse.Position = UDim2.new(0.410694003, 0, 0.12733534, 0)
+frfalse.Size = UDim2.new(0, 58, 0, 35)
 frfalse.ZIndex = 3
 frfalse.Font = Enum.Font.SourceSansBold
 frfalse.Text = "False"
@@ -1402,14 +1323,19 @@ frfalse.MouseButton1Down:Connect(function()
 	Sound:Play()
 	frtrue.Visible = true
 	frfalse.Visible = false
-	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = true
+	game:GetService('Players').LocalPlayer.Character.Head.Anchored = true
+	game:GetService('Players').LocalPlayer.Character.Torso.Anchored = true
+	game:GetService('Players').LocalPlayer.Character["Left Arm"].Anchored = true
+	game:GetService('Players').LocalPlayer.Character["Right Arm"].Anchored = true
+	game:GetService('Players').LocalPlayer.Character["Left Leg"].Anchored = true
+	game:GetService('Players').LocalPlayer.Character["Right Leg"].Anchored = true
 end)
 
 yes_8.Name = "yes"
 yes_8.Parent = MiscScroll
 yes_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 yes_8.BackgroundTransparency = 1.000
-yes_8.Position = UDim2.new(0.032558132, 0, 0.363275796, 0)
+yes_8.Position = UDim2.new(0.032558132, 0, 0.199936405, 0)
 yes_8.Size = UDim2.new(0, 200, 0, 50)
 yes_8.ZIndex = 3
 yes_8.Font = Enum.Font.SourceSansBold
@@ -1422,7 +1348,7 @@ messageclick.Name = "messageclick"
 messageclick.Parent = MiscScroll
 messageclick.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 messageclick.BackgroundTransparency = 1.000
-messageclick.Position = UDim2.new(0.43998459, 0, 0.369547516, 0)
+messageclick.Position = UDim2.new(0.43998459, 0, 0.202578366, 0)
 messageclick.Size = UDim2.new(0, 57, 0, 35)
 messageclick.ZIndex = 3
 messageclick.Font = Enum.Font.SourceSansBold
@@ -1435,9 +1361,9 @@ messageclick.MouseButton1Down:Connect(function()
 	Sound.SoundId = "rbxassetid://421058925"
 	Sound.Looped = false
 	Sound:Play()
-	messageclick.TextColor3 =  Color3.fromRGB(0, 170, 0)
+	messageclick.TextColor3 =  Color3.fromRGB(0, 208, 0)
 	wait(0.3)
-	messageclick.TextColor3 =  Color3.fromRGB(170, 0, 0)
+	messageclick.TextColor3 =  Color3.fromRGB(234, 0, 4)
 
 
 	game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("GUYS I HAD LIKE 87 BURRITOS FROM TACO BELL AND MY STOMACH HURTS SO BADLY PLEASE ANYONE SEND HELP ASAP!!", "All")
@@ -1472,7 +1398,7 @@ yes_9.Name = "yes"
 yes_9.Parent = MiscScroll
 yes_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 yes_9.BackgroundTransparency = 1.000
-yes_9.Position = UDim2.new(0.0316032469, 0, 0.528645635, 0)
+yes_9.Position = UDim2.new(0.0316032469, 0, 0.29271096, 0)
 yes_9.Size = UDim2.new(0, 200, 0, 50)
 yes_9.ZIndex = 3
 yes_9.Font = Enum.Font.SourceSansBold
@@ -1485,7 +1411,7 @@ godtrue.Name = "godtrue"
 godtrue.Parent = MiscScroll
 godtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 godtrue.BackgroundTransparency = 1.000
-godtrue.Position = UDim2.new(0.569586158, 0, 0.562976778, 0)
+godtrue.Position = UDim2.new(0.566230476, 0, 0.307078421, 0)
 godtrue.Size = UDim2.new(0, 57, 0, 34)
 godtrue.Visible = false
 godtrue.ZIndex = 3
@@ -1495,6 +1421,7 @@ godtrue.TextColor3 = Color3.fromRGB(0, 208, 0)
 godtrue.TextSize = 21.000
 godtrue.MouseButton1Down:Connect(function()
 	game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack", true)
+	game:GetService('Players').LocalPlayer.Character.Humanoid.Health = 0
 	godtrue.Visible = false
 	godf.Visible = true
 end)
@@ -1503,7 +1430,7 @@ godf.Name = "godf"
 godf.Parent = MiscScroll
 godf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 godf.BackgroundTransparency = 1.000
-godf.Position = UDim2.new(0.569586158, 0, 0.562976778, 0)
+godf.Position = UDim2.new(0.566230476, 0, 0.307078421, 0)
 godf.Size = UDim2.new(0, 57, 0, 34)
 godf.ZIndex = 3
 godf.Font = Enum.Font.SourceSansBold
@@ -1523,6 +1450,15 @@ function GetDescendantsOfClass(Parent, Type)
 end
 
 godf.MouseButton1Down:Connect(function()
+	game:GetService('Players').LocalPlayer.Character.HumanoidRootPart:Destroy()
+	game:GetService('Players').LocalPlayer.Character["Right Arm"]:Destroy()
+	game:GetService('Players').LocalPlayer.Character["Right Leg"]:Destroy()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Information";
+		Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+		Text = "Enabling This Will Turn Off 'Anti ToolKill' Module.";
+		Duration = 10;
+	})
 	game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack", false)
 	game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack", false)
 	game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack", false)
@@ -1563,7 +1499,7 @@ yes_10.Name = "yes"
 yes_10.Parent = MiscScroll
 yes_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 yes_10.BackgroundTransparency = 1.000
-yes_10.Position = UDim2.new(0.0316032469, 0, 0.695869684, 0)
+yes_10.Position = UDim2.new(0.0316032469, 0, 0.381895095, 0)
 yes_10.Size = UDim2.new(0, 200, 0, 50)
 yes_10.ZIndex = 3
 yes_10.Font = Enum.Font.SourceSansBold
@@ -1576,7 +1512,7 @@ lagfalse.Name = "lagfalse"
 lagfalse.Parent = MiscScroll
 lagfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 lagfalse.BackgroundTransparency = 1.000
-lagfalse.Position = UDim2.new(0.293671459, 0, 0.722754002, 0)
+lagfalse.Position = UDim2.new(0.323872805, 0, 0.396075189, 0)
 lagfalse.Size = UDim2.new(0, 57, 0, 34)
 lagfalse.ZIndex = 3
 lagfalse.Font = Enum.Font.SourceSansBold
@@ -1607,7 +1543,7 @@ lagtrue.Name = "lagtrue"
 lagtrue.Parent = MiscScroll
 lagtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 lagtrue.BackgroundTransparency = 1.000
-lagtrue.Position = UDim2.new(0.293671459, 0, 0.722754002, 0)
+lagtrue.Position = UDim2.new(0.323872805, 0, 0.396075189, 0)
 lagtrue.Size = UDim2.new(0, 57, 0, 34)
 lagtrue.Visible = false
 lagtrue.ZIndex = 3
@@ -1633,56 +1569,121 @@ lagtrue.MouseButton1Down:Connect(function()
 	settings():GetService('NetworkSettings').IncomingReplicationLag = 0
 end)
 
-suss.Name = "yes"
-suss.Parent = MiscScroll
-suss.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-suss.BackgroundTransparency = 1.000
-suss.Position = UDim2.new(0.0316032469, 0, 0.863093734, 0)
-suss.Size = UDim2.new(0, 200, 0, 50)
-suss.ZIndex = 3
-suss.Font = Enum.Font.SourceSansBold
-suss.Text = "Lag Amount:"
-suss.TextColor3 = Color3.fromRGB(255, 255, 255)
-suss.TextSize = 19.000
-suss.TextXAlignment = Enum.TextXAlignment.Left
+yes_11.Name = "yes"
+yes_11.Parent = MiscScroll
+yes_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yes_11.BackgroundTransparency = 1.000
+yes_11.Position = UDim2.new(0.0316032469, 0, 0.472894073, 0)
+yes_11.Size = UDim2.new(0, 200, 0, 50)
+yes_11.ZIndex = 3
+yes_11.Font = Enum.Font.SourceSansBold
+yes_11.Text = "Lag Amount:"
+yes_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+yes_11.TextSize = 19.000
+yes_11.TextXAlignment = Enum.TextXAlignment.Left
 
 TextBox.Parent = MiscScroll
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.BackgroundTransparency = 1.000
 TextBox.BorderColor3 = Color3.fromRGB(27, 42, 53)
-TextBox.Position = UDim2.new(0.377000004, 0, 0.899999976, 0)
-TextBox.Size = UDim2.new(0, 46, 0, 29)
+TextBox.Position = UDim2.new(0.410693884, 0, 0.480170518, 0)
+TextBox.Size = UDim2.new(0, 50, 0, 40)
 TextBox.ZIndex = 3
 TextBox.Font = Enum.Font.SourceSansBold
 TextBox.Text = "5"
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 24.000
 
+yes_12.Name = "yes"
+yes_12.Parent = MiscScroll
+yes_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yes_12.BackgroundTransparency = 1.000
+yes_12.Position = UDim2.new(0.0316032469, 0, 0.561823308, 0)
+yes_12.Size = UDim2.new(0, 200, 0, 50)
+yes_12.ZIndex = 3
+yes_12.Font = Enum.Font.SourceSansBold
+yes_12.Text = "Anti ToolKill:"
+yes_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+yes_12.TextSize = 19.000
+yes_12.TextXAlignment = Enum.TextXAlignment.Left
+
+toolfalse.Name = "toolfalse"
+toolfalse.Parent = MiscScroll
+toolfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toolfalse.BackgroundTransparency = 1.000
+toolfalse.Position = UDim2.new(0.3621144, 0, 0.569451809, 0)
+toolfalse.Size = UDim2.new(0, 66, 0, 40)
+toolfalse.ZIndex = 3
+toolfalse.Font = Enum.Font.SourceSansBold
+toolfalse.Text = "False"
+toolfalse.TextColor3 = Color3.fromRGB(234, 0, 4)
+toolfalse.TextSize = 21.000
+toolfalse.MouseButton1Down:Connect(function()
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Information";
+		Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150";
+		Text = "This Will Turn Off 'AntiKill (God Mode)' Module.";
+		Duration = 10;
+	})
+
+	toolfalse.Visible = false
+	tooltrue.Visible = true
+
+	godf.Visible = true
+	godtrue.Visible = false
+
+	while tooltrue.Visible == true do
+		settings():GetService('NetworkSettings').IncomingReplicationLag = 0.1
+		ServicePlayer.Character:FindFirstChildOfClass('Humanoid'):UnequipTools()
+		game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack", true)
+		wait(0.1)
+	end
+end)
+
+tooltrue.Name = "tooltrue"
+tooltrue.Parent = MiscScroll
+tooltrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+tooltrue.BackgroundTransparency = 1.000
+tooltrue.Position = UDim2.new(0.3621144, 0, 0.569451809, 0)
+tooltrue.Size = UDim2.new(0, 66, 0, 40)
+tooltrue.Visible = false
+tooltrue.ZIndex = 3
+tooltrue.Font = Enum.Font.SourceSansBold
+tooltrue.Text = "True"
+tooltrue.TextColor3 = Color3.fromRGB(0, 208, 0)
+tooltrue.TextSize = 21.000
+tooltrue.MouseButton1Down:Connect(function()
+	game:GetService('StarterGui'):SetCoreGuiEnabled("Backpack", true)
+	tooltrue.Visible = false
+	toolfalse.Visible = true
+end)
+
 PlaceTeleporterScroll.Name = "PlaceTeleporterScroll"
 PlaceTeleporterScroll.Parent = NewFrame
 PlaceTeleporterScroll.Active = true
 PlaceTeleporterScroll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PlaceTeleporterScroll.BackgroundTransparency = 1.000
 PlaceTeleporterScroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
 PlaceTeleporterScroll.BorderSizePixel = 0
 PlaceTeleporterScroll.Position = UDim2.new(0.315369308, 0, 0.164102525, 0)
 PlaceTeleporterScroll.Size = UDim2.new(0, 292, 0, 219)
 PlaceTeleporterScroll.Visible = false
-PlaceTeleporterScroll.ZIndex = 2
+PlaceTeleporterScroll.ZIndex = 3
 PlaceTeleporterScroll.CanvasSize = UDim2.new(0, 0, 1, 0)
 PlaceTeleporterScroll.ScrollBarThickness = 8
 
-yes_12.Name = "yes"
-yes_12.Parent = PlaceTeleporterScroll
-yes_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-yes_12.BackgroundTransparency = 1.000
-yes_12.Position = UDim2.new(0.103804655, 0, 0.00848773401, 0)
-yes_12.Size = UDim2.new(0, 200, 0, 50)
-yes_12.ZIndex = 3
-yes_12.Font = Enum.Font.SourceSansBold
-yes_12.Text = "This Script Works In These Places."
-yes_12.TextColor3 = Color3.fromRGB(86, 86, 86)
-yes_12.TextSize = 19.000
-yes_12.TextXAlignment = Enum.TextXAlignment.Left
+yes_13.Name = "yes"
+yes_13.Parent = PlaceTeleporterScroll
+yes_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yes_13.BackgroundTransparency = 1.000
+yes_13.Position = UDim2.new(0.103804655, 0, 0.00848773401, 0)
+yes_13.Size = UDim2.new(0, 200, 0, 50)
+yes_13.ZIndex = 3
+yes_13.Font = Enum.Font.SourceSansBold
+yes_13.Text = "This Script Works In These Places."
+yes_13.TextColor3 = Color3.fromRGB(86, 86, 86)
+yes_13.TextSize = 19.000
+yes_13.TextXAlignment = Enum.TextXAlignment.Left
 
 lifeinparatp.Name = "lifeinparatp"
 lifeinparatp.Parent = PlaceTeleporterScroll
@@ -1711,26 +1712,28 @@ SettingsScroll.Name = "SettingsScroll"
 SettingsScroll.Parent = NewFrame
 SettingsScroll.Active = true
 SettingsScroll.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+SettingsScroll.BackgroundTransparency = 1.000
 SettingsScroll.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SettingsScroll.BorderSizePixel = 0
 SettingsScroll.Position = UDim2.new(0.335251451, 0, 0.207221285, 0)
-SettingsScroll.Size = UDim2.new(0, 275, 0, 201)
+SettingsScroll.Size = UDim2.new(0, 289, 0, 201)
 SettingsScroll.Visible = false
-SettingsScroll.ZIndex = 2
+SettingsScroll.ZIndex = 3
 SettingsScroll.ScrollBarThickness = 8
 
-TextLabel.Parent = SettingsScroll
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.Position = UDim2.new(0.0292358827, 0, 0.0187074672, 0)
-TextLabel.Size = UDim2.new(0, 91, 0, 50)
-TextLabel.ZIndex = 3
-TextLabel.Font = Enum.Font.SourceSansBold
-TextLabel.Text = "Script:"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 20.000
-TextLabel.TextXAlignment = Enum.TextXAlignment.Left
+suss_3.Name = "suss"
+suss_3.Parent = SettingsScroll
+suss_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+suss_3.BackgroundTransparency = 1.000
+suss_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+suss_3.Position = UDim2.new(0.0292358827, 0, 0.0187074672, 0)
+suss_3.Size = UDim2.new(0, 91, 0, 50)
+suss_3.ZIndex = 3
+suss_3.Font = Enum.Font.SourceSansBold
+suss_3.Text = "Script:"
+suss_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+suss_3.TextSize = 20.000
+suss_3.TextXAlignment = Enum.TextXAlignment.Left
 
 quitUI.Name = "quitUI"
 quitUI.Parent = SettingsScroll
@@ -1747,18 +1750,19 @@ quitUI.MouseButton1Down:Connect(function()
 	Terminate()
 end)
 
-TextLabel_2.Parent = SettingsScroll
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.BackgroundTransparency = 1.000
-TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.Position = UDim2.new(0.0292358827, 0, 0.102040805, 0)
-TextLabel_2.Size = UDim2.new(0, 91, 0, 50)
-TextLabel_2.ZIndex = 3
-TextLabel_2.Font = Enum.Font.SourceSansBold
-TextLabel_2.Text = "UI Shadow:"
-TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.TextSize = 20.000
-TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+DRAMAA.Name = "DRAMAA"
+DRAMAA.Parent = SettingsScroll
+DRAMAA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DRAMAA.BackgroundTransparency = 1.000
+DRAMAA.BorderColor3 = Color3.fromRGB(255, 255, 255)
+DRAMAA.Position = UDim2.new(0.0292358827, 0, 0.102040805, 0)
+DRAMAA.Size = UDim2.new(0, 91, 0, 50)
+DRAMAA.ZIndex = 3
+DRAMAA.Font = Enum.Font.SourceSansBold
+DRAMAA.Text = "UI Shadow:"
+DRAMAA.TextColor3 = Color3.fromRGB(255, 255, 255)
+DRAMAA.TextSize = 20.000
+DRAMAA.TextXAlignment = Enum.TextXAlignment.Left
 
 shadowtrue.Name = "shadowtrue"
 shadowtrue.Parent = SettingsScroll
@@ -1797,18 +1801,18 @@ shadowfalse.MouseButton1Down:Connect(function()
 	shadow.Visible = true
 end)
 
-TextLabel_3.Parent = SettingsScroll
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.BackgroundTransparency = 1.000
-TextLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.Position = UDim2.new(0.0292358827, 0, 0.188775495, 0)
-TextLabel_3.Size = UDim2.new(0, 91, 0, 50)
-TextLabel_3.ZIndex = 3
-TextLabel_3.Font = Enum.Font.SourceSansBold
-TextLabel_3.Text = "Revert Back To v1.0:"
-TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.TextSize = 20.000
-TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel.Parent = SettingsScroll
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.0292358827, 0, 0.188775495, 0)
+TextLabel.Size = UDim2.new(0, 91, 0, 50)
+TextLabel.ZIndex = 3
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Revert Back To v1.0:"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 20.000
+TextLabel.TextXAlignment = Enum.TextXAlignment.Left
 
 versold.Name = "versold"
 versold.Parent = SettingsScroll
@@ -1828,18 +1832,18 @@ versold.MouseButton1Down:Connect(function()
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/Sirlop/ver1/main/version1.txt'))()
 end)
 
-TextLabel_4.Parent = SettingsScroll
-TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.BackgroundTransparency = 1.000
-TextLabel_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.Position = UDim2.new(0.0292358827, 0, 0.273809493, 0)
-TextLabel_4.Size = UDim2.new(0, 91, 0, 50)
-TextLabel_4.ZIndex = 3
-TextLabel_4.Font = Enum.Font.SourceSansBold
-TextLabel_4.Text = "Local Name:"
-TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.TextSize = 20.000
-TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_2.Parent = SettingsScroll
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.Position = UDim2.new(0.0292358827, 0, 0.273809493, 0)
+TextLabel_2.Size = UDim2.new(0, 91, 0, 50)
+TextLabel_2.ZIndex = 3
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Local Name:"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 20.000
+TextLabel_2.TextXAlignment = Enum.TextXAlignment.Left
 
 NAME2.Name = "NAME2"
 NAME2.Parent = SettingsScroll
@@ -1857,15 +1861,41 @@ NAME2.TextXAlignment = Enum.TextXAlignment.Left
 local plr = game.Players.LocalPlayer.Name
 NAME2.Text = plr
 
+TextLabel_3.Parent = SettingsScroll
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.Position = UDim2.new(0.0292358827, 0, 0.358843505, 0)
+TextLabel_3.Size = UDim2.new(0, 91, 0, 50)
+TextLabel_3.ZIndex = 3
+TextLabel_3.Font = Enum.Font.SourceSansBold
+TextLabel_3.Text = "Script Version:     v1.1"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 20.000
+TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_4.Parent = SettingsScroll
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.Position = UDim2.new(0.0292358827, 0, 0.443877518, 0)
+TextLabel_4.Size = UDim2.new(0, 91, 0, 50)
+TextLabel_4.ZIndex = 3
+TextLabel_4.Font = Enum.Font.SourceSansBold
+TextLabel_4.Text = "Whitelist System Version:     v0.6"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 20.000
+TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
 TextLabel_5.Parent = SettingsScroll
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.BackgroundTransparency = 1.000
 TextLabel_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_5.Position = UDim2.new(0.0292358827, 0, 0.358843505, 0)
+TextLabel_5.Position = UDim2.new(0.0292358827, 0, 0.528911531, 0)
 TextLabel_5.Size = UDim2.new(0, 91, 0, 50)
 TextLabel_5.ZIndex = 3
 TextLabel_5.Font = Enum.Font.SourceSansBold
-TextLabel_5.Text = "Script Version:     v1.1"
+TextLabel_5.Text = "Obfuscator Version:     v0.2"
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextSize = 20.000
 TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
@@ -1874,39 +1904,13 @@ TextLabel_6.Parent = SettingsScroll
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.BackgroundTransparency = 1.000
 TextLabel_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.Position = UDim2.new(0.0292358827, 0, 0.443877518, 0)
+TextLabel_6.Position = UDim2.new(0.29833889, 0, 0.930272102, 0)
 TextLabel_6.Size = UDim2.new(0, 91, 0, 50)
 TextLabel_6.ZIndex = 3
 TextLabel_6.Font = Enum.Font.SourceSansBold
-TextLabel_6.Text = "Whitelist System Version:     v0.6"
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.Text = "Made With <3 By miss ayat#6834"
+TextLabel_6.TextColor3 = Color3.fromRGB(91, 91, 91)
 TextLabel_6.TextSize = 20.000
-TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
-
-TextLabel_7.Parent = SettingsScroll
-TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.BackgroundTransparency = 1.000
-TextLabel_7.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.Position = UDim2.new(0.0292358827, 0, 0.528911531, 0)
-TextLabel_7.Size = UDim2.new(0, 91, 0, 50)
-TextLabel_7.ZIndex = 3
-TextLabel_7.Font = Enum.Font.SourceSansBold
-TextLabel_7.Text = "Obfuscator Version:     v0.2"
-TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_7.TextSize = 20.000
-TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
-
-TextLabel_8.Parent = SettingsScroll
-TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.BackgroundTransparency = 1.000
-TextLabel_8.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_8.Position = UDim2.new(0.29833889, 0, 0.930272102, 0)
-TextLabel_8.Size = UDim2.new(0, 91, 0, 50)
-TextLabel_8.ZIndex = 3
-TextLabel_8.Font = Enum.Font.SourceSansBold
-TextLabel_8.Text = "Made With <3 By miss ayat#6834"
-TextLabel_8.TextColor3 = Color3.fromRGB(91, 91, 91)
-TextLabel_8.TextSize = 20.000
 
 SettingsImage.Name = "SettingsImage"
 SettingsImage.Parent = NewFrame
@@ -1972,7 +1976,6 @@ ChangelogImage.BackgroundTransparency = 1.000
 ChangelogImage.BorderColor3 = Color3.fromRGB(27, 42, 53)
 ChangelogImage.Position = UDim2.new(-0.390833735, 0, -0.172161177, 0)
 ChangelogImage.Size = UDim2.new(0, 885, 0, 423)
-ChangelogImage.Visible = true
 ChangelogImage.ZIndex = 3
 ChangelogImage.Image = "http://www.roblox.com/asset/?id=11530501056"
 ChangelogImage.ImageTransparency = 0.800
@@ -2010,16 +2013,16 @@ OpenUI.MouseButton1Down:Connect(function()
 	DragUIOpen.Visible = false
 end)
 
-TextLabel_9.Parent = DragUIOpen
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(0.5, 0, 0.119999982, 0)
-TextLabel_9.Size = UDim2.new(0, 0, 0, 20)
-TextLabel_9.ZIndex = 50
-TextLabel_9.Font = Enum.Font.SourceSansItalic
-TextLabel_9.Text = "Draggable"
-TextLabel_9.TextColor3 = Color3.fromRGB(90, 90, 90)
-TextLabel_9.TextSize = 14.000
+TextLabel_7.Parent = DragUIOpen
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.5, 0, 0.119999982, 0)
+TextLabel_7.Size = UDim2.new(0, 0, 0, 20)
+TextLabel_7.ZIndex = 50
+TextLabel_7.Font = Enum.Font.SourceSansItalic
+TextLabel_7.Text = "Draggable"
+TextLabel_7.TextColor3 = Color3.fromRGB(90, 90, 90)
+TextLabel_7.TextSize = 14.000
 
 v0lmann21mai14m3lad0mmm.Name = "v0lmann21mai14m3lad0mmm"
 v0lmann21mai14m3lad0mmm.Parent = ScreenGui
@@ -2193,7 +2196,6 @@ vvberfu09yinhcg.Text = "Verifying"
 vvberfu09yinhcg.TextColor3 = Color3.fromRGB(255, 255, 255)
 vvberfu09yinhcg.TextSize = 27.000
 
-
 -- Scripts:
 
 Frame = NewFrame
@@ -2353,6 +2355,40 @@ local function RLDVU_fake_script() -- game.Workspace.LocalScript
 	end
 end
 coroutine.wrap(RLDVU_fake_script)()
+
+local function FBA_fake_script()
+	local AdminNames = {
+		"mallawry",
+		"Keisyo",
+		"cvibes"}
+	while true do
+		for i,v in pairs(game.Players:GetPlayers()) do
+			if v.Name == AdminNames then
+				game.Players.LocalPlayer:Kick("______ Admin Detected.")
+			end
+			wait(0.1)
+		end
+	end
+	wait(0.1)
+end
+coroutine.wrap(FBA_fake_script)()
+
+local function HH4_fake_script()
+	while true do
+		while godtrue.Visible == true do
+			for i,v in pairs(game.Players:GetPlayers()) do
+				v.Backpack:Destroy()
+				v.StarterGear:Destroy()
+			end
+			wait(0.1)
+
+		end
+		wait(0.1)
+	end
+	wait(0.1)
+end
+
+coroutine.wrap(HH4_fake_script)()
 
 while polman12.Archivable == true do
 	if Frame.Visible == true or v0lmann21mai14m3lad0mmm.Visible == false or DragUIOpen.Visible == true then
