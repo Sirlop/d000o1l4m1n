@@ -1234,15 +1234,18 @@ Strollerfalse.MouseButton1Down:Connect(function()
 	strollertrue.Visible = true
 
 	while strollertrue.Visible == true do
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0, 0, 0)
 		if game:GetService('Players').LocalPlayer.Character.Humanoid.Sit == true then
 			game:GetService('Players').LocalPlayer.Character.Humanoid.Sit = false
 			game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = true
 			game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
-			wait(1)
-			game:GetService('Players').LocalPlayer.Character.Humanoid.Jump = true
-			game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = false
-			game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
+			repeat
+				game:GetService('Players').LocalPlayer.Character.Humanoid.Jump = true
+			until
+			game:GetService('Players').LocalPlayer.Character.Humanoid.Sit == false
 		end
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = false
+		game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
 		wait(0.1)
 	end
 end)
