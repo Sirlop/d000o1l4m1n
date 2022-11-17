@@ -983,7 +983,7 @@ Stop.MouseButton1Down:connect(function()
 	Sound.Looped = false
 	Sound:Play()
 	settings():GetService("NetworkSettings").IncomingReplicationLag = 0
-	ServicePlayer.Character.Humanoid.RigType = 'R15'
+	game:GetService('Players').LocalPlayer.Character.Head:Destroy()
 	strollertrue.Visible = false
 	Strollerfalse.Visible = true
 	confirmation.Active = false
@@ -1234,19 +1234,18 @@ Strollerfalse.MouseButton1Down:Connect(function()
 	strollertrue.Visible = true
 
 	while strollertrue.Visible == true do
+		game:GetService('Players').LocalPlayer.Character.Humanoid.Sit = false
 		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0, 0, 0)
 		if game:GetService('Players').LocalPlayer.Character.Humanoid.Sit == true then
 			game:GetService('Players').LocalPlayer.Character.Humanoid.Sit = false
 			game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = true
 			game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
-			repeat
-				game:GetService('Players').LocalPlayer.Character.Humanoid.Jump = true
-			until
-			game:GetService('Players').LocalPlayer.Character.Humanoid.Sit == false
+			game:GetService('Players').LocalPlayer.Character.Humanoid.Jump = true
+			wait(1.5)
+			game:GetService('Players').LocalPlayer.Character.Humanoid.Sit = false
+			game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = false
+			game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
 		end
-		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = false
-		game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
-		wait(0.1)
 	end
 end)
 
@@ -1486,6 +1485,11 @@ godf.MouseButton1Down:Connect(function()
 	end
 
 	while godtrue.Visible == true do
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Shape = 'Ball'
+		ServicePlayer.Character.HumanoidRootPart.Transparency = 0
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CanColide = true
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(0, 0, 0)
+
 		game:GetService('Players').LocalPlayer.Character:FindFirstChildOfClass('Humanoid'):UnequipTools()
 		ServicePlayer.Character:FindFirstChildOfClass('Humanoid'):UnequipTools()
 		game:GetService("StarterGui"):SetCoreGuiEnabled("Backpack", false)
