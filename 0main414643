@@ -1245,8 +1245,8 @@ Strollerfalse.MouseButton1Down:Connect(function()
 			game:GetService('Players').LocalPlayer.Character.Humanoid.Sit = false
 			game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.Anchored = false
 			game:GetService('Players').LocalPlayer.Character.Torso.Anchored = false
-			wait(0.1)
 		end
+		wait(0.1)
 	end
 end)
 
