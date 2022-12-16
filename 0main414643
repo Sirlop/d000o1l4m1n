@@ -404,6 +404,11 @@ polkaman.MouseButton1Down:Connect(function()
 		if table.find(whsi5m41n6man4, game.Players.LocalPlayer.Name) then
 			print("Whitelisted.")
 			FadeOut()
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Loading...";
+				Text = " ";
+				Duration = 4.5;
+			})
 			v0lmann21mai14m3lad0mmm.Visible = false
 			v0lmann21mai14m3lad0mmm:Destroy()
 			wait(0.3)
